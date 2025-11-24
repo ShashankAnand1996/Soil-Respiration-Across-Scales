@@ -155,7 +155,7 @@ Retrieved from pre-downloaded monthly data files:
 
 ## 4. FLUXCOM
 
-FLUXCOM carbon flux data products (https://www.fluxcom.org/CF-Download/), stored in netCDF-4 format. We use the **RS** (Remote Sensing) setup, which uses MODIS-only inputs.
+FLUXCOM carbon flux data products (https://www.fluxcom.org/CF-Download/), stored in netCDF-4 format. We use the ensemble of **RS** (Remote Sensing) data setup, which uses MODIS-only inputs to estimate global-scale carbon flux.
 
 ## 5. CRU (Climatic Research Unit) 
 CRU global climate dataset (https://crudata.uea.ac.uk/cru/data/hrg/), providing long-term PET and rainfall at **0.5° × 0.5°** resolution.
