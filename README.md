@@ -1,6 +1,6 @@
 # Soil Heterotrophic Respiration
 
-This repository compiles soil respiration data from point-scale observations (flux tower measurements) to global gridded satellite-based estimates. The goal is to support further analyses of the drivers of soil heterotrophic respiration across spatial and temporal scales. Data are sourced from NEON, AmeriFlux, MODIS, and FLUXCOM at multiple spatial and temporal resolutions.
+This repository compiles relevant carbon fluxes to compute soil respiration data from point-scale observations (flux tower measurements) to global gridded satellite-based estimates. The goal is to support further analyses of the drivers of soil heterotrophic respiration across spatial and temporal scales. Data are sourced from NEON, AmeriFlux, MODIS, and FLUXCOM at multiple spatial and temporal resolutions.
 
 ---
 
