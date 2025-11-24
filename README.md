@@ -227,6 +227,8 @@ Steps:
 2. Merge with AmeriFlux using same keys.  
 3. Standardize column names.  
 4. Remove unused fields.
+
+---
    
 ## 6. Growing Season Definition
 
