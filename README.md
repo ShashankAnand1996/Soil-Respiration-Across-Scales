@@ -25,7 +25,7 @@ This repository compiles and analyzes soil respiration data from point-scale obs
    - [Final Data Merging](#5-final-data-merging)
    - [Growing Season Definition](#6-growing-season-definition)
    - [Data Aggregation Summary](#7-data-aggregation-summary)
-   - [Fluxcom Interpolation Steps](#8-fluxcom-interpolation-steps)
+   - [Fluxcom Interpolation Steps](#8-fluxcom-interpolation-steps-see-extraction-fluxcom_data.ipynb))
 4. [Contact](#contact)
 
 ---
