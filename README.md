@@ -109,7 +109,7 @@ Provides long-term climate aridity values for selected NEON sites.
 # Data Sources
 
 ## 1. MODIS Satellite Data (Google Earth Engine)
-Retrieved via `get_modis_data.py` for the period 2018-01-01 to 2024-12-31:
+Retrieved for the period 2018-01-01 to 2024-12-31:
 
 - **fPAR (Fraction of Photosynthetically Active Radiation)**: MCD15A3H.061
   - Variables: `Fpar`, `Lai`, `FparLai_QC`
@@ -132,8 +132,6 @@ Retrieved via `get_modis_data.py` for the period 2018-01-01 to 2024-12-31:
   - Spatial resolution: 500m
 
 ## 2. NEON (National Ecological Observatory Network)
-Retrieved via `get_neon_data.py`:
-
 - **PAR (Photosynthetically Active Radiation)**: DP1.00024.001
   - Temporal resolution: 30-minute intervals
   - Period: 2013-01-01 to 2023-12-31
