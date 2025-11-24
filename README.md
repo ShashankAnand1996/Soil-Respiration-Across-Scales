@@ -178,8 +178,7 @@ CRU global climate dataset (https://crudata.uea.ac.uk/cru/data/hrg/), providing 
      - GPP/NPP/CUE: monthly mean
      - ET/PET: monthly sum
   6. Flag growing season based on site-specific SOS (Start of Season) and EOS (End of Season)
-  7. Merge all MODIS variables into single monthly dataset
-- **Output**: `data/interim/modis_data_monthly.parquet`
+  7. Merge all MODIS variables into a single monthly dataset
 
 ## 2. NEON PAR Data Processing
 - **Input**: Raw NEON PAR parquet files (30-minute resolution)
@@ -189,7 +188,6 @@ CRU global climate dataset (https://crudata.uea.ac.uk/cru/data/hrg/), providing 
   3. Calculate monthly averages of PAR by site
   4. Add growing season flags based on site coordinates
   5. Map NEON site IDs to FluxNet site codes
-- **Output**: `data/interim/neon_par_stacked_all_sites.parquet`
 
 ## 3. AmeriFlux Data Processing
 - **Input**: Monthly AmeriFlux CSV files from multiple sites
@@ -199,7 +197,7 @@ CRU global climate dataset (https://crudata.uea.ac.uk/cru/data/hrg/), providing 
   3. Extract year and month from TIMESTAMP
   4. Map FluxNet site codes to NEON site codes
   5. Add growing season flags based on month and site-specific SOS/EOS
-- **Output**: `data/interim/ameriflux_monthly_data_processed.parquet`
+
 
 ## 4. Missing Sites Processing
 - **Input**: Gap-filled data from ReddyProc for 3 sites (PR-xLA, US-xNW, US-xRN)
@@ -209,7 +207,6 @@ CRU global climate dataset (https://crudata.uea.ac.uk/cru/data/hrg/), providing 
   3. Convert Day of Year to proper dates
   4. Calculate monthly averages
   5. Map site codes and add growing season flags
-- **Output**: `data/gpp_ameriflux_missing_sites.csv`
 
 ## 5. Final Data Merging
 - **Input**: All interim processed datasets
@@ -221,7 +218,7 @@ CRU global climate dataset (https://crudata.uea.ac.uk/cru/data/hrg/), providing 
 
 ## 6. Growing Season Definition
 
-Growing season is determined on a site-by-site basis using:
+The growing season is determined on a site-by-site basis using:
 - **SOS**: Start of Season (month)
 - **EOS**: End of Season (month)
 
