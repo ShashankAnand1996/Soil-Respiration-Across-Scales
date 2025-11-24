@@ -251,4 +251,4 @@ For sites with defined seasons, months between SOS and EOS (inclusive) are flagg
 This compilation of across-the-scale carbon flux data was prepared by Shashank Kumar Anand, Rodolfo Souza, and Salvatore Calabrese in the Department of Biological and Agricultural Engineering at Texas A&M University.
 
 For more information, please contact:  
-📧 **skanand@tamu.edu**
+[Shashank Kumar Anand](mailto:skanannd@tamu.edu)
