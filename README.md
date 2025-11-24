@@ -26,6 +26,7 @@ This repository compiles relevant carbon fluxes to compute soil respiration data
    - [Growing Season Definition](#6-growing-season-definition)
    - [Data Aggregation Summary](#7-data-aggregation-summary)
    - [Fluxcom Interpolation Steps](#8-fluxcom-interpolation-steps-see-extraction-fluxcom-data.ipynb)
+   - [Fluxtower Data Analysis](#9-fluxtower-data-analysis-see-Fluxtower-Data-Analysis.ipynb)
 4. [Authorthip_and Contact](#authorship-and-contact)
    
 ---
@@ -244,6 +245,11 @@ For sites with defined seasons, months between SOS and EOS (inclusive) are flagg
 3. Interpolate grid-cell values to site coordinates.  
 4. Assemble monthly outputs into a tidy table.  
 5. Save as CSV for analysis.
+
+## 9. Fluxtower Data Analysis (see `Fluxtower-Data-Analysis.ipynb`)
+1. From the MODIS_Ameriflux_input_data_final.csv, calculate Ameriflux-based NPP using MODIS CUE and Ameriflux GPP.
+2. Calculate Ameriflux-based heterotrophic respiration by adding the computed Ameriflux-based NPP to Ameriflux_NEE.
+3. Calculate the long-term averages of Ameriflux-based heterotrophic respiration and Ameriflux-based NPP and analyze their variability with the dryness index compiled in Long_term_DI_CRU.xlsx for the NEON sites.
 
 ---
 
