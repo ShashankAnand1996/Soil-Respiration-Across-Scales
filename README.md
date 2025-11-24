@@ -22,7 +22,8 @@ This repository compiles and analyzes soil respiration data from point-scale obs
    - [Missing Sites Processing](#4-missing-sites-processing)  
    - [Final Data Merging](#5-final-data-merging)
    - [Growing Season Definition](#growing-season-definition)
-   -  [Data Aggregation Summary](#data-aggregation-summary)  
+   - [Data Aggregation Summary](#data-aggregation-summary)
+   - [Fluxcom Interpolation Steps](#fluxcom-interpolation-steps)
 4. [Contact](#contact)
 
 ---
@@ -238,11 +239,11 @@ For sites with defined seasons, months between SOS and EOS (inclusive) are flagg
 | AmeriFlux | Monthly | Monthly | None (already monthly) |
 
 
-## 8. Fluxcom Processing steps (see `Extraction_FLUXCOM_data.ipynb`):
-1. Open annual NetCDF file from `dir_path` containing global GPP/NEE/TER values.  
+## 8. Fluxcom Interpolation Steps (see `Extraction_FLUXCOM_data.ipynb`):
+1. Open an annual NetCDF file from `dir_path` containing month-wise global GPP/NEE/TER values.  
 2. Load NEON site latitude/longitude.  
 3. Interpolate grid-cell values to site coordinates.  
-4. Assemble outputs into a tidy table.  
+4. Assemble monthly outputs into a tidy table.  
 5. Save as CSV for analysis.
 
 ---
