@@ -12,18 +12,20 @@ This repository compiles and analyzes soil respiration data from point-scale obs
    - [FLUXCOM Extracted Datasets](#fluxcom-extracted-datasets)  
    - [Long-term Climate Aridity (CRU)](#long_term_di_cruxlsx)
 2. [Data Sources](#data-sources)  
-   - [MODIS Satellite Data](#1-modis-satellite-data-google-earth-engine)  
+   - [MODIS](#1-modis-satellite-data-google-earth-engine)  
    - [NEON](#2-neon-national-ecological-observatory-network)  
-   - [AmeriFlux](#3-ameriflux)  
+   - [AmeriFlux](#3-ameriflux)
+   - [FUXCOM](#4-fluxcom)
+   - [CRU](#5-cru)
 3. [Data Processing Information](#data-processing-information)  
    - [MODIS Data Processing](#1-modis-data-processing)  
    - [NEON PAR Data Processing](#2-neon-par-data-processing)  
    - [AmeriFlux Data Processing](#3-ameriflux-data-processing)  
    - [Missing Sites Processing](#4-missing-sites-processing)  
    - [Final Data Merging](#5-final-data-merging)
-   - [Growing Season Definition](#growing-season-definition)
-   - [Data Aggregation Summary](#data-aggregation-summary)
-   - [Fluxcom Interpolation Steps](#fluxcom-interpolation-steps)
+   - [Growing Season Definition](#6-growing-season-definition)
+   - [Data Aggregation Summary](#7-data-aggregation-summary)
+   - [Fluxcom Interpolation Steps](#8-fluxcom-interpolation-steps)
 4. [Contact](#contact)
 
 ---
@@ -102,9 +104,6 @@ Provides long-term climate aridity values for selected NEON sites.
 | location | - | Site name | - |
 | DI | CRU | Dryness Index (PET / rainfall) | - |
 
-### Data Source  
-CRU global climate dataset (https://crudata.uea.ac.uk/cru/data/hrg/), providing long-term PET and rainfall at **0.5° × 0.5°** resolution.
-
 ---
 
 # Data Sources
@@ -154,11 +153,13 @@ Retrieved from pre-downloaded monthly data files:
 - **Missing Sites Data**: 
   - Three sites processed separately with gap-filled GPP using ReddyProc
   - Variables: `GPP_DT_uStar` (Daytime partitioning)
-  - 
 
-## 4. FLUXCOM Data Source
+## 4. FLUXCOM
 
 FLUXCOM carbon flux data products (https://www.fluxcom.org/CF-Download/), stored in netCDF-4 format. We use the **RS** (Remote Sensing) setup, which uses MODIS-only inputs.
+
+## 5. CRU (Climatic Research Unit) 
+CRU global climate dataset (https://crudata.uea.ac.uk/cru/data/hrg/), providing long-term PET and rainfall at **0.5° × 0.5°** resolution.
 
 ---
 
