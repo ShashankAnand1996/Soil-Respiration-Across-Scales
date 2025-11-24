@@ -20,10 +20,10 @@ This repository compiles and analyzes soil respiration data from point-scale obs
    - [NEON PAR Data Processing](#2-neon-par-data-processing)  
    - [AmeriFlux Data Processing](#3-ameriflux-data-processing)  
    - [Missing Sites Processing](#4-missing-sites-processing)  
-   - [Final Data Merging](#5-final-data-merging)  
-4. [Growing Season Definition](#growing-season-definition)  
-5. [Data Aggregation Summary](#data-aggregation-summary)  
-6. [Contact](#contact)
+   - [Final Data Merging](#5-final-data-merging)
+   - [Growing Season Definition](#growing-season-definition)
+   -  [Data Aggregation Summary](#data-aggregation-summary)  
+4. [Contact](#contact)
 
 ---
 
