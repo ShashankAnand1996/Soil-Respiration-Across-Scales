@@ -26,7 +26,7 @@ This repository compiles relevant carbon fluxes to compute soil respiration data
    - [Growing Season Definition](#6-growing-season-definition)
    - [Data Aggregation Summary](#7-data-aggregation-summary)
    - [Fluxcom Interpolation Steps](#8-fluxcom-interpolation-steps-see-extraction-fluxcom-data-.ipynb)
-4. [Contact](#contact)
+4. [Authorthip_and Contact](#authorship_and_contact)
    
 ---
 
@@ -247,7 +247,8 @@ For sites with defined seasons, months between SOS and EOS (inclusive) are flagg
 
 ---
 
-# Contact
+# Authorship and Contact
+This compilation of across-the-scale carbon flux data was prepared by Shashank Kumar Anand, Rodolfo Souza, and Salvatore Calabrese in the Department of Biological and Agricultural Engineering at Texas A&M University.
 
 For more information, please contact:  
 📧 **skanand@tamu.edu**
