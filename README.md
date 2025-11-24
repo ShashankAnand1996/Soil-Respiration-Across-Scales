@@ -238,7 +238,7 @@ For sites with defined seasons, months between SOS and EOS (inclusive) are flagg
 | AmeriFlux | Monthly | Monthly | None (already monthly) |
 
 
-## 8. Fluxcom Interpolation Steps (see `Extraction_FLUXCOM_data.ipynb`)
+## 8. Fluxcom Interpolation Steps (see `Extraction-FLUXCOMD-Data.ipynb`)
 1. Open an annual NetCDF file from `dir_path` containing month-wise global GPP/NEE/TER values.  
 2. Load NEON site latitude/longitude.  
 3. Interpolate grid-cell values to site coordinates.  
