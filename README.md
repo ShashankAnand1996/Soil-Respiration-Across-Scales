@@ -74,10 +74,10 @@ Contains MODIS and AmeriFlux variables aggregated to monthly scale.
 ## FLUXCOM Extracted Datasets
 
 ### `Neondata_Fluxcom_720_360.csv`  
-Carbon flux data values interpolated from the FLUXCOM RS dataset at **0.5° × 0.5°** resolution.
+Carbon flux data values for the NEON sites interpolated from the FLUXCOM RS dataset at **0.5° × 0.5°** resolution.
 
 ### `Neondata_Fluxcom_4320_2160.csv`  
-Carbon flux data values interpolated from the FLUXCOM RS dataset at **0.0833° × 0.0833°** resolution.
+Carbon flux data values for the NEON sites interpolated from the FLUXCOM RS dataset at **0.0833° × 0.0833°** resolution.
 
 Both files contain monthly GPP, NEE, and TER extracted for ~30 NEON sites.
 
