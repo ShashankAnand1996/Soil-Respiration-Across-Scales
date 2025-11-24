@@ -25,8 +25,8 @@ This repository compiles relevant carbon fluxes to compute soil respiration data
    - [Final Data Merging](#5-final-data-merging)
    - [Growing Season Definition](#6-growing-season-definition)
    - [Data Aggregation Summary](#7-data-aggregation-summary)
-   - [Fluxcom Interpolation Steps](#8-fluxcom-interpolation-steps-see-extraction-fluxcom-data-.ipynb)
-4. [Authorthip_and Contact](#authorship_and_contact)
+   - [Fluxcom Interpolation Steps](#8-fluxcom-interpolation-steps-see-extraction-fluxcom-data.ipynb)
+4. [Authorthip_and Contact](#authorship-and-contact)
    
 ---
 
