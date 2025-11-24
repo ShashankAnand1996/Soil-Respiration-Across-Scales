@@ -49,7 +49,7 @@ Provides ~30 NEON sites with coordinate information.
 
 ## `MODIS_Ameriflux_input_data_final.csv`
 
-Contains MODIS and AmeriFlux variables aggregated to monthly scale.
+Contains MODIS and AmeriFlux variables aggregated to a monthly scale.
 
 | Variable | Source | Description | Units |
 |----------|--------|-------------|-------|
