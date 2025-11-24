@@ -71,10 +71,10 @@ Contains MODIS and AmeriFlux variables aggregated to monthly scale.
 ## FLUXCOM Extracted Datasets
 
 ### `Neondata_Fluxcom_720_360.csv`  
-FLUXCOM RS dataset at **0.5° × 0.5°** resolution.
+Carbon flux data values interpolated from the FLUXCOM RS dataset at **0.5° × 0.5°** resolution.
 
 ### `Neondata_Fluxcom_4320_2160.csv`  
-FLUXCOM RS dataset at **0.0833° × 0.0833°** resolution.
+Carbon flux data values interpolated from the FLUXCOM RS dataset at **0.0833° × 0.0833°** resolution.
 
 Both files contain monthly GPP, NEE, and TER extracted for ~30 NEON sites.
 
@@ -87,18 +87,6 @@ Both files contain monthly GPP, NEE, and TER extracted for ~30 NEON sites.
 | GPP_YEAR | FLUXCOM | Gross Primary Production | g C/m²/day |
 | NEE_YEAR | FLUXCOM | Net Ecosystem Exchange | g C/m²/day |
 | TER_YEAR | FLUXCOM | Total Ecosystem Respiration | g C/m²/day |
-
-### FLUXCOM Data Source
-
-FLUXCOM carbon flux data products (https://www.fluxcom.org/CF-Download/), stored in netCDF-4 format.  
-We use the **RS** (Remote Sensing) setup, which uses MODIS-only inputs.
-
-Processing steps (see `Extraction_FLUXCOM_data.ipynb`):
-1. Open annual NetCDF file from `dir_path` containing global GPP/NEE/TER values.  
-2. Load NEON site latitude/longitude.  
-3. Interpolate grid-cell values to site coordinates.  
-4. Assemble outputs into a tidy table.  
-5. Save as CSV for analysis.
 
 ---
 
@@ -163,7 +151,11 @@ Using pre-downloaded monthly MM files:
 - `RECO_NT_VUT_REF`  
 - `GPP_NT_VUT_REF`  
 - `P_F` (Precipitation)  
-- Temporal resolution: monthly  
+- Temporal resolution: monthly
+
+## 4. FLUXCOM Data Source
+
+FLUXCOM carbon flux data products (https://www.fluxcom.org/CF-Download/), stored in netCDF-4 format. We use the **RS** (Remote Sensing) setup, which uses MODIS-only inputs.
 
 ### Missing Sites  
 Three sites were processed using **ReddyProc** with `GPP_DT_uStar` (daytime partitioning).
@@ -235,12 +227,10 @@ Steps:
 2. Merge with AmeriFlux using same keys.  
 3. Standardize column names.  
 4. Remove unused fields.
+   
+## 6. Growing Season Definition
 
----
-
-# Growing Season Definition
-
-Growing season is defined per site using:
+The growing season is defined per site using:
 
 - **SOS** — Start of Season (month)  
 - **EOS** — End of Season (month)  
@@ -251,7 +241,7 @@ Rules:
 
 ---
 
-# Data Aggregation Summary
+## 7. Data Aggregation Summary
 
 | Data Source    | Original Resolution | Final Resolution | Method |
 |----------------|---------------------|------------------|--------|
@@ -260,6 +250,15 @@ Rules:
 | MODIS GPP/NPP  | 8-day               | Monthly          | Mean   |
 | MODIS ET/PET   | 8-day               | Monthly          | Sum    |
 | AmeriFlux      | Monthly             | Monthly          | None   |
+
+---
+
+## 8. Fluxcom Processing steps (see `Extraction_FLUXCOM_data.ipynb`):
+1. Open annual NetCDF file from `dir_path` containing global GPP/NEE/TER values.  
+2. Load NEON site latitude/longitude.  
+3. Interpolate grid-cell values to site coordinates.  
+4. Assemble outputs into a tidy table.  
+5. Save as CSV for analysis.
 
 ---
 
